@@ -20,7 +20,7 @@ import org.openjdk.jmh.annotations.Warmup;
 @Warmup (iterations = 2, time = 3, timeUnit = TimeUnit.SECONDS)
 @Measurement (iterations = 3, time = 1, timeUnit = TimeUnit.SECONDS)
 @BenchmarkMode (Mode.AverageTime)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 @State(Scope.Benchmark)
 public class MyBenchmark {
 
